@@ -1,0 +1,15 @@
+@import '../../../styles/variables';
+
+.container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 70px 5% 146px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: $large_bp) {
+        padding: 54px 5% 80px;
+    }
+}

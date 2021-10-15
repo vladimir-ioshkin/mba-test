@@ -1,0 +1,119 @@
+@import '../../../styles/variables';
+
+.program {
+    margin-bottom: 72px;
+    font-size: 16px;
+    font-weight: 300;
+
+    @media (max-width: $medium_bp) {
+        margin-bottom: 0;
+    }
+}
+
+.program__title {
+    font-weight: 700;
+    font-size: 26px;
+    margin: 0 0 54px;
+
+    @media (max-width: $medium_bp) {
+        margin-bottom: 28px;
+        font-size: 22px;
+    }
+}
+
+.program__item {
+    display: flex;
+    margin: 0 -20px 0;
+
+    @media (max-width: $medium_bp) {
+        flex-direction: column;
+        margin: 0 0 36px;
+    }
+}
+
+.program__module {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 0;
+    flex: 1 0 45%;
+
+    @media (max-width: $medium_bp) {
+        flex-direction: column;
+    }
+
+    @media (max-width: $medium_bp) {
+        margin: 0 0 10px;
+    }
+
+    &_close .program__list {
+        @media (max-width: $medium_bp) {
+            display: none;
+        }
+    }
+
+    &_close .program__subtitle {
+        @media (max-width: $medium_bp) {
+            background-color: $light_grey;
+            cursor: pointer;
+        }
+    }
+
+    &_open .program__subtitle {
+        @media (max-width: $medium_bp) {
+            background-color: $primary_color;
+            color: $inverse_color;
+            cursor: pointer;
+        }
+    }
+
+    &_open .program__subtitle::before, &_close .program__subtitle::before, &_close .program__subtitle::after {
+        @media (max-width: $medium_bp) {
+            content: '';
+            width: 18px;
+            height: 2px;
+            background-color: $inverse_color;
+            position: absolute;
+            top: 50%;
+            left: 30px;
+        }
+    }
+
+    &_close .program__subtitle::before, &_close .program__subtitle::after {
+        background-color: $grey;
+    }
+
+    &_close .program__subtitle::after {
+        transform: rotate(90deg);
+    }
+}
+
+.program__list {
+    padding-top: 36px;
+    flex: 0 1 400px;
+
+    @media (max-width: $medium_bp) {
+        padding-top: 16px;
+        flex: initial;
+    }
+}
+
+.program__subtitle {
+    font-size: 32px;
+    font-weight: 400;
+    padding-top: 30px;
+    margin-right: 32px;
+    border-top: 2px solid $primary_color;
+    position: relative;
+
+    @media (max-width: $large_bp) {
+        font-size: 24px;
+    }
+
+    @media (max-width: $medium_bp) {
+        border: none;
+        margin: 0;
+        padding: 10px 70px;
+        font-size: 18px;
+        font-weight: 300;
+    }
+}

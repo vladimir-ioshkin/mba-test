@@ -1,0 +1,40 @@
+@import '../../../styles/variables';
+
+.card {
+    box-sizing: border-box;
+    padding: 56px 5% 56px 6%;
+    color: $inverse_color;
+    background-color: $default_color;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 15px 24px;
+    flex: 1 0 45%;
+    min-width: 420px;
+
+    @media (max-width: $large_bp) {
+        padding: 30px 5% 40px 6%;
+    }
+
+    @media (max-width: $medium_bp) {
+        min-width: initial;
+        flex: 1 1 420px;
+    }
+}
+
+.card_primary {
+    background-color: $primary_color;
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 36px;
+    margin: 0 0 24px;
+
+    @media (max-width: $large_bp) {
+        font-size: 32px; 
+    }
+
+    @media (max-width: $medium_bp) {
+        font-size: 25px;
+    }
+}

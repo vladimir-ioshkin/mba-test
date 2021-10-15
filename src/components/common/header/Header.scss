@@ -1,0 +1,18 @@
+@import '../../../styles/variables';
+
+.header {
+    font-weight: 700;
+    font-size: 36px;
+    margin: 0 auto 90px;
+    display: block;
+
+    @media (max-width: $large_bp) {
+        margin-bottom: 54px;
+    }
+
+    @media (max-width: $medium_bp) {
+        font-weight: 500;
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+}

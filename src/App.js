@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { AttestationCard } from './components/attestation-card';
+import { CardsWrapper } from './components/common/cards-wrapper';
+import { Container } from './components/common/container';
+import { Header } from './components/common/header';
+import { PracticalModulesCard } from './components/practical-modules-card';
+import { ProgramsContainer } from './components/programs-container';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Container>
+            <Header>Специализированные дисциплины</Header>
+            <ProgramsContainer />
+            <CardsWrapper>
+                <PracticalModulesCard />
+                <AttestationCard />
+            </CardsWrapper>
+        </Container>
+    )
 }
 
 export default App;
