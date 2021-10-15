@@ -30,7 +30,7 @@ export function ProgramModule({ moduleNumber, items }) {
                 <List>
                     {items.map((item) => {
                         return (
-                            <List.Item>{item}</List.Item>
+                            <List.Item key={item}>{item}</List.Item>
                         );
                     })}
                 </List>
