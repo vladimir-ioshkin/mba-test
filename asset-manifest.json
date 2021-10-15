@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/mba-test/static/css/main.5302d310.chunk.css",
+    "main.js": "/mba-test/static/js/main.dedde023.chunk.js",
+    "main.js.map": "/mba-test/static/js/main.dedde023.chunk.js.map",
+    "runtime-main.js": "/mba-test/static/js/runtime-main.ced7674a.js",
+    "runtime-main.js.map": "/mba-test/static/js/runtime-main.ced7674a.js.map",
+    "static/js/2.e56ca1f0.chunk.js": "/mba-test/static/js/2.e56ca1f0.chunk.js",
+    "static/js/2.e56ca1f0.chunk.js.map": "/mba-test/static/js/2.e56ca1f0.chunk.js.map",
+    "index.html": "/mba-test/index.html",
+    "static/css/main.5302d310.chunk.css.map": "/mba-test/static/css/main.5302d310.chunk.css.map",
+    "static/js/2.e56ca1f0.chunk.js.LICENSE.txt": "/mba-test/static/js/2.e56ca1f0.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/mba-test/static/media/StyreneAWeb-Regular.b7ed4080.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ced7674a.js",
+    "static/js/2.e56ca1f0.chunk.js",
+    "static/css/main.5302d310.chunk.css",
+    "static/js/main.dedde023.chunk.js"
+  ]
+}
