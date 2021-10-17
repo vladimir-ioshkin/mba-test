@@ -21,12 +21,12 @@ export function ProgramModule({ moduleNumber, items }) {
     return (
         <div className={className}>
             <div
-                className="program__subtitle"
+                className='program__subtitle'
                 onClick={onClick}
             >
                 {`${moduleNumber}\u00A0модуль`}
             </div>
-            <div className="program__list">
+            <div className='program__list'>
                 <List>
                     {items.map((item) => {
                         return (
